@@ -16,7 +16,9 @@ ALLOWED_HOSTS = ['uper-fare-predection-production.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ['https://uper-fare-predection-production.up.railway.app']
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'predictor', 'static'),  # if your static folder is inside 'predictor/'
+]
 
 # Application definition
 
