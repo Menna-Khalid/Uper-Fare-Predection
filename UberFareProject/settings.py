@@ -10,9 +10,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "django-insecure-vym-in3=#pj2ct0nyb$)z(mb))lu5@#p(s(1z&4&bukx^%(tse"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['uper-fare-predection-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://uper-fare-predection-production.up.railway.app']
 
 
 # Application definition
